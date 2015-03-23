@@ -1,0 +1,222 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  background: #000;
+}
+@font-face { 
+  font-family: 'Bebas Neue'; 
+  src: url('../fonts/BebasNeue.eot'); 
+  src: url('../fonts/BebasNeue.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/BebasNeue.woff2') format('woff2'), 
+  url('../fonts/BebasNeue.woff') format('woff'), 
+  url('../fonts/BebasNeue.ttf') format('truetype'), 
+  url('../fonts/BebasNeue.svg#Bebas Neue') format('svg'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+.mn-container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0%;
+  min-height: 600px;
+}
+.mn-colLeft {
+  width: 50%;
+  float: left;
+}
+.mn-colLeft .mn-header {
+  width: 80%;
+  height: 140px;
+  background: transparent url("../i/brands.png") left top no-repeat;
+  background-size: 100% 100%;
+  margin-top: 50px;
+  opacity: 0.3;
+  margin-left: 10%;
+  margin-bottom: 7.5%;
+}
+.mn-on .mn-colLeft .mn-header { opacity: 1; }
+.mn-colLeft h2 {
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', Arial;
+  color: #222;
+  font-size: 200%;
+  font-weight: normal;
+  margin: 0;
+  margin-left: 10%;
+  padding: 0;
+}
+.mn-on .mn-colLeft h2 { color: #666; }
+.mn-colLeft h3 {
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', Arial;
+  color: #444;
+  font-size: 300%;
+  font-weight: normal;
+  margin: 0;
+  margin-left: 10%;
+  padding: 0;
+  margin-bottom: 2%; 
+}
+.mn-on .mn-colLeft h3 { color: #FFF; }
+.mn-colLeft h4 {
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', Arial;
+  color: #222;
+  font-size: 175%;
+  font-weight: normal;
+  margin: 0;
+  margin-left: 10%;
+  padding: 2% 0 8% 0;
+  border-top: 1px solid #111;
+  display: inline-block;
+}
+.mn-on .mn-colLeft h4 { color: #666; }
+.mn-colLeft button {
+  clear: both;
+  margin-left: 10%;
+  width: 140px;
+  height: 66px;
+  background: transparent url("../i/off.png") left top no-repeat;
+  background-size: 100%;
+  border: none;
+  display: block;
+}
+.mn-on .mn-colLeft button { outline: none; background: transparent url("../i/on.png") left top no-repeat; background-size: 100%;  }
+.mn-on .mn-colLeft button:focus { outline: none; }
+.mn-colLeft p {
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', Arial;
+  color: #BBB;
+  font-size: 185%;
+  margin-left: 10%;
+  margin-bottom: 0;
+}
+.mn-colLeft p span {
+  color: #FFF;
+  font-family: 'Bebas Neue', Arial;
+  font-size: 150%;
+}
+.mn-colRight {
+  width: 50%;
+  float: right;
+  position: relative;
+}
+.mn-colRight span#girar { background: #121212 url("../i/undo.png") center no-repeat; width: 20px; height: 20px; font-size: 11px; padding: 5px 10px; top: 10%; left: 32%; position: absolute; cursor: pointer; display: none; }
+.mn-colRight span#volver { background: #121212 url("../i/redo.png") center no-repeat; width: 20px; height: 20px;  font-size: 11px; padding: 5px 10px; top: 10%; left: 32%; position: absolute; cursor: pointer;  display: none;}
+.mn-on .mn-colRight span#girar { display: block; border: 1px solid #454545; }
+.mn-on .mn-colRight span#volver { display: none; border: 1px solid #454545; }
+.mn-colRight span#girar, .mn-colRight span#volver { z-index: 99999; border-radius: 10px; }
+.mn-colRight .mn-botella {
+  background: transparent url("../i/botella_1_off.png") center no-repeat; background-size:  40% 100%;
+  min-height: 600px;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  -webkit-perspective: 800;
+  -moz-perspective: 800;
+  perspective: 800;
+}
+.carta {
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 0.5s;
+    
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all 0.5s;
+    
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+.mn-botella.voltear .carta{
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.carta .lado{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.mn-on .carta .lado {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: transparent url("../i/botella_2.png") center no-repeat;
+  min-height: 600px;
+  background-size: 40% 100%;
+}
+.carta .frente{
+  height: 100%;
+  width: 100%;
+}
+.mn-on .carta .frente {
+  background: transparent url("../i/botella_1.png") center no-repeat;
+  min-height: 600px;
+  background-size: 40% 100%;
+}
+.carta .atras{
+  background: #F0F0F0;
+  font-family: Helvetica, Verdana, Arial;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.mn-preorden { display: block; background: #121212; width: 20%; text-align: center; padding: 6px 0; color: #666; text-decoration: none; border-radius: 10px; margin-left: auto; margin-right: auto; font-family: 'Bebas Neue', Arial; font-size: 18px; }
+.mn-preorden:hover { color: #FFF;  background: #333; -webkit-transition: all 1s; -moz-transition: all 1s; transition: all 1s; }
+.mn-close-modal { float: right; background-color: #222; padding: 5px 10px; color: #FFF; cursor: pointer; }
+.mn-frm-preorden { margin: 25px 20px 20px; }
+.mn-cont-input { padding: 10px 0; overflow: hidden;}
+.mn-cont-input input { border: 1px solid #EEE; padding: 5px; font-size: 15px; width: 90%; }
+.mn-cont-input button { border: 1px solid #CCC; background: #EEE; color: #333; padding: 5px 10px; margin-left: auto; margin-right: auto; }
+.mn-modal{width: 400px; min-height: 450px; position: absolute; z-index: 9999; left: 0; right: 0; top: 50px; margin: auto; display: none; background: rgba(255,255,255, 1); border-radius: 10px; }
+label.label-element{color: #ccc;font-size: 12px;margin-left: 10px;}
+body.mn-m .modal-msg { position: fixed; }
+.mn-hidden-area { display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.95); z-index: 999; }
+body.mn-m .mn-hidden-area { display: block; }
+label.error{display: inline-block;color: red;font-size: 11px;margin-top: 5px;margin-left: 5px;}
+.mn-frm-preorden h4{  text-transform: uppercase;text-align: center;font-size: 18px;color: #333;margin-bottom: 10px;}
+.submit-form{float: right;margin-right: 6%!important;}
+.mn-cont-input select{width: 94%;height: 28px;-webkit-appearance: none;-moz-appearance: none;appearance: none;border: 1px solid #eee;color: #999}
+/* ipad landscape */
+@media (max-width: 1024px) {
+  .mn-colLeft { width: 100%; float: none; }
+  .mn-colRight { width: 100%; float: none; }
+  .mn-colRight .mn-botella { background-size:40% 100%; background-position: center; min-height: 600px; } 
+  .mn-on .carta .frente { background-size:40% 100%; }
+  .mn-on .carta .lado {  background-size:40%  100%; }
+}
+/* ipad portrait */
+@media (max-width: 768px) {
+  .mn-colLeft { width: 100%; float: none; }
+  .mn-colRight { width: 100%; float: none; }
+  .mn-colRight .mn-botella { background-size:40% 100%; background-position: center; min-height: 600px; } 
+  .mn-on .carta .frente { background-size:40% 100%; }
+  .mn-on .carta .lado {  background-size:40% 100%; }
+}
+
+/* iphone landscape */
+@media (max-width: 480px) {
+  .mn-colLeft { width: 100%; float: none; }
+  .mn-colLeft .mn-header { height: 80px; }
+  .mn-colLeft h2 { font-size: 140%; }
+  .mn-colLeft h3 { font-size: 250%; }
+  .mn-colLeft h4 { font-size: 140%; }
+  .mn-colLeft p { font-size: 150%; }
+  .mn-colLeft p span { font-size: 140%; }
+  .mn-colRight { width: 100%; float: none; }
+  .mn-colRight .mn-botella { background-size: 100%; background-position: center; min-height: 600px; } 
+  .mn-on .carta .frente { background-size:100%; }
+  .mn-on .carta .lado {  background-size: 80%; }
+}
+/* iphone portrait */
+@media (max-width: 320px) {
+  .mn-colLeft { width: 100%; float: none; }
+  .mn-colRight { width: 100%; float: none; }
+  .mn-colRight .mn-botella { background-size: 100%; background-position: center; min-height: 600px; } 
+  .mn-on .carta .frente { background-size:100%; }
+  .mn-on .carta .lado {  background-size: 80%; }
+}
