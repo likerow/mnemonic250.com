@@ -1,15 +1,42 @@
-<?php
-/**
- * Local Configuration Override
- *
- * This configuration override file is for overriding environment-specific and
- * security-sensitive configuration information. Copy this file without the
- * .dist extension at the end and populate values as needed.
- *
- * @NOTE: This file is ignored from Git by default with the .gitignore included
- * in ZendSkeletonApplication. This is a good practice, as it prevents sensitive
- * credentials from accidentally being committed into version control.
- */
+    <?php
+    return array(   
+        // Db paráms    
+        'db' => array(
+            //this is for primary adapter....
+            'username' => 'root',
+            'password' => '',
+            'driver' => 'Pdo',
+            'dsn' => 'mysql:dbname=dev_mnemonic;host=localhost',
+            'profiler' => true,
+            'driver_options' => array(
+                PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
+            ),
+            'adapters' => array(
+                'db1' => array(
+                    'username' => 'root',
+                    'password' => '',
+                ),
+                'db2' => array(
+                    'username' => 'other_user',
+                    'password' => 'other_user_passwd',
+                ),
+            ),
+        ),
 
-return array(
-);
+        //Servers
+        'servers' => array(
+            'static' => array(
+                'host' => 'http://dev.mnemonic250.com/',
+                'version' => '?v1.1'
+            ),
+            'element' => array(
+                'host' => 'http://dev.mnemonic250.com/',                
+            ),
+            'content' => array(
+                'host' => 'http://dev.mnemonic250.com/',                
+            ),            
+        ), 
+        'view_manager' => array(
+            'base_path' => "http://dev.mnemonic250.com/",
+        ),
+    );
