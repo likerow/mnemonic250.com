@@ -169,7 +169,7 @@ outline: none;
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
-.mn-preorden { display: block; background: #121212; width: 20%; text-align: center; padding: 6px 0; color: #666; text-decoration: none; border-radius: 10px; margin-left: auto; margin-right: auto; font-family: 'Bebas Neue', Arial; font-size: 18px; }
+.mn-preorden { display: block; background: #333; width: 20%; text-align: center; padding: 6px 0; color: #999; text-decoration: none; border-radius: 10px; margin-left: auto; margin-right: auto; font-family: 'Bebas Neue', Arial; font-size: 18px;margin-top: 20px;}
 .mn-preorden:hover { color: #FFF;  background: #333; -webkit-transition: all 1s; -moz-transition: all 1s; transition: all 1s; }
 .mn-close-modal { float: right; background-color: #222; padding: 5px 10px; color: #FFF; cursor: pointer; }
 .mn-frm-preorden { margin: 25px 20px 20px; }
