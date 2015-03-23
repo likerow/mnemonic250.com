@@ -82,6 +82,10 @@ body {
   border: none;
   display: block;
 }
+.mn-colLeft button:focus {
+outline: none;
+}
+
 .mn-on .mn-colLeft button { outline: none; background: transparent url("../i/on.png") left top no-repeat; background-size: 100%;  }
 .mn-on .mn-colLeft button:focus { outline: none; }
 .mn-colLeft p {
