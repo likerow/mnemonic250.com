@@ -110,7 +110,7 @@ outline: none;
 .mn-colRight span#volver { background: #121212 url("../i/redo.png") center no-repeat; width: 20px; height: 20px;  font-size: 11px; padding: 5px 10px; top: 10%; left: 32%; position: absolute; cursor: pointer;  display: none;}
 .mn-on .mn-colRight span#girar { display: block; border: 1px solid #454545; }
 .mn-on .mn-colRight span#volver { display: none; border: 1px solid #454545; }
-.mn-colRight span#girar, .mn-colRight span#volver { z-index: 99999; border-radius: 10px; }
+.mn-colRight span#girar, .mn-colRight span#volver { z-index: 999; border-radius: 10px; }
 .mn-colRight .mn-botella {
   background: transparent url("../i/botella_1_off.png") center no-repeat; background-size:  40% 100%;
   min-height: 600px;
@@ -150,6 +150,7 @@ outline: none;
   background: transparent url("../i/botella_2.png") center no-repeat;
   min-height: 600px;
   background-size: 40% 100%;
+  margin-top: 20px;
 }
 .carta .frente{
   height: 100%;
@@ -159,6 +160,7 @@ outline: none;
   background: transparent url("../i/botella_1.png") center no-repeat;
   min-height: 600px;
   background-size: 40% 100%;
+  margin-top: 20px;
 }
 .carta .atras{
   background: #F0F0F0;
@@ -169,7 +171,7 @@ outline: none;
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
-.mn-preorden { display: block; background: #333; width: 20%; text-align: center; padding: 6px 0; color: #999; text-decoration: none; border-radius: 10px; margin-left: auto; margin-right: auto; font-family: 'Bebas Neue', Arial; font-size: 18px;margin-top: 20px;}
+.mn-preorden { display: block; background: #333; width: 20%; text-align: center; padding: 6px 0; color: #999; text-decoration: none; border-radius: 10px; margin-left: auto; margin-right: auto; font-family: 'Bebas Neue', Arial; font-size: 18px;margin-top: 30px;}
 .mn-preorden:hover { color: #FFF;  background: #333; -webkit-transition: all 1s; -moz-transition: all 1s; transition: all 1s; }
 .mn-close-modal { float: right; background-color: #222; padding: 5px 10px; color: #FFF; cursor: pointer; }
 .mn-frm-preorden { margin: 25px 20px 20px; }
