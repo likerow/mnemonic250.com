@@ -189,13 +189,13 @@ label.error{display: inline-block;color: red;font-size: 11px;margin-top: 5px;mar
 .mn-cont-input select{width: 94%;height: 28px;-webkit-appearance: none;-moz-appearance: none;appearance: none;border: 1px solid #eee;color: #999}
 .cnt-social{position: absolute;right: 30px;top: 50px;display:none;z-index: 2;}
 .mn-on .cnt-social{display: block;}
-.cnt-social span{display: inline-block;vertical-align: top;color: #fff;font-family: arial;font-size: 15px;}
+.cnt-social span{display: inline-block;vertical-align: top;color: #fff;font-family: arial;font-size: 15px;margin-left: 5px;}
 .cnt-social ul{list-style: none;padding-left: 0;margin-bottom: 0;}
 .cnt-social ul li{float: left;margin-right: 5px;}
 .cnt-social ul li a{width: 49px;height: 49px;display: block;background: url(../i/redes_sociales.png) no-repeat;}
 .cnt-social ul li a.fb{background-position: 0 0;}
 .cnt-social ul li a.tw{background-position: -61px 0;}
-.cnt-social ul li a.ins{background-position: -122px 0;}
+.cnt-social ul li a.ins{background-position: -123px 0;}
 @media (min-width: 1032px) {
   .mn-on .carta .frente{background-size: 63% 100%;}
   .mn-on .carta .lado{background-size: 63% 100%;}
