@@ -73,7 +73,7 @@ return array(
                 
     //Emails
     'emails' => array(
-        'admin' => ' orders@mnemonic250.com', // email del administrador
+        'admin' => 'orders@mnemonic250.com', // email del administrador
         'developers' => 'likerow@gmail.com,angel.jara@bongous.com', // emails de los dev
         'from' => 'contacto@bongous.com',
     ), 

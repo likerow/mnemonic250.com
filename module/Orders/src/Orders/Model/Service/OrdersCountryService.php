@@ -9,5 +9,9 @@ class OrdersCountryService extends AbstractService
     {
         return $this->_repository->getAll();
     }
-    
+   
+   	public function getById($countryId)
+	{
+	    return $this->_repository->getBy(array('country_id=?' => $countryId), TRUE);
+	}
 }

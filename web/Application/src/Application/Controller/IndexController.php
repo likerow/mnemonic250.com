@@ -42,6 +42,10 @@ class IndexController extends AbstractActionController
                 ->get('Orders\Model\Service\OrdersOperacionesService');
         $response['status'] = $serviceOrderOPeraciones->setOrder($params);
 
+        $dataPais = $serviceOrderCountry = $this->getServiceLocator()
+                ->get('Orders\Model\Service\OrdersCountryService')
+                ->getById($params['pais']); 
+                $params['pais'] = $dataPais['co_name'];
         $renderer = $this->getServiceLocator()->get('ViewRenderer');         
                 $html = $renderer->render('application/index/mail/pedidos', 
                         $params); 
