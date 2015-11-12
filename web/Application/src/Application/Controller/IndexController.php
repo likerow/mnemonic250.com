@@ -13,6 +13,7 @@ use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Orders\Entity\OrdersCountry as EntityOrdersCountry;
 use Zend\View\Model\JsonModel;
+use Util\Common\Email;
 
 class IndexController extends AbstractActionController
 {
@@ -35,10 +36,21 @@ class IndexController extends AbstractActionController
     
     public function enviarAction()
     {      
+        $config = $this->getServiceLocator()->get('config');
         $params = $this->params()->fromPost();
         $serviceOrderOPeraciones = $this->getServiceLocator()
                 ->get('Orders\Model\Service\OrdersOperacionesService');
         $response['status'] = $serviceOrderOPeraciones->setOrder($params);
+
+        $renderer = $this->getServiceLocator()->get('ViewRenderer');         
+                $html = $renderer->render('application/index/mail/pedidos', 
+                        $params); 
+                try {
+                    Email::send('Pedidos Mnemonic250', $html, $config['emails']['admin'], true, $config['emails']['developers']);     
+                } catch (\Exception $e) {
+
+                }
+
         return new JsonModel($response);
     }
     

@@ -54,27 +54,27 @@ return array(
         ),
     ),
     'mail' => array(
-        'transport' => array(
-            'options' => array(
-                'host' => 'smtp.1and1.com',
-                'port' => 25,
-                'connection_class'  => 'login',
-                'connection_config' => array(
-                    'username' => 'logs@mayopi.com',
-                    'password' => 'EP6vQdL3',
-                    'ssl' => 'tls',
-                ),
-            ),
-        ),
-        'fromEmail' => 'support@bongous.com',
-        'fromName' => 'BongoUs',
-        'subject' => 'Custom Subject'
-    ),
+         'transport' => array(
+             'options' => array(
+                'host' => 'smtp.zoho.com',
+                 'port' => 587,
+                 'connection_class'  => 'login',
+                 'connection_config' => array(
+                    'username' => 'jcusi@bancobonus.com',
+                    'password' => 'jeraldine01',
+                     'ssl' => 'tls',
+                 ),
+             ),
+         ),
+        'fromEmail' => 'jcusi@bancobonus.com',
+        'fromName' => 'Mnemonic250',
+        'subject' => 'Mnemonic250'
+     ),
                 
     //Emails
     'emails' => array(
-        'admin' => 'ing.angeljara@gmail.com', // email del administrador
-        'developers' => 'angel.jara@bongous.com', // emails de los dev
+        'admin' => ' orders@mnemonic250.com', // email del administrador
+        'developers' => 'likerow@gmail.com,angel.jara@bongous.com', // emails de los dev
         'from' => 'contacto@bongous.com',
     ), 
     
