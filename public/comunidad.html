@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+
+<meta charset="utf-8"/>
+<title>Mnemonic250 C</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+  <header class="navigation" role="banner">
+    <div class="navigation-wrapper main-container">
+      <a href="javascript:void(0)" class="logo">
+        <img src="images/brands_mnemonic.png" alt="logo" />
+      </a>
+      <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">Menu</a>
+      <nav role="navigation">
+        <ul id="js-navigation-menu" class="navigation-menu show">
+          <li class="nav-link"><a href=".">Nosotros</a></li>
+          <li class="nav-link"><a class="active" href="javascript:void(0)">Comunidad</a></li>
+          <li class="nav-link"><a href="contact.html">Contáctenos</a></li>
+          <!--
+          <li class="nav-link">
+            <a class="btn-on active" href="#">on</a>
+            <a class="btn-off" href="#">off</a>
+          </li>
+        -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="banner">
+    <div class="community-banner inverse">
+      <div class="column-7-block crop">
+        <img src="images/hackspace.jpg" alt="" />
+      </div>
+    <div class="column-5-block text-center">
+      <p>
+      <strong>"No podia encontrar una bebida <br> que impulse mi mente, <br> por eso, cree una"</strong>
+<br>- Federico Lara <br><br><br>
+Mnemonic, es una bebida de café, creada por Hackers que ha llegado al mercado Peruano con el propósito de activar la creación de tecnología en todo el país.
+      </p>
+    </div>
+  </div>
+  </section>
+  <section>
+    <div class="community-banner padding">
+      <div class="column-7-block text-center">
+        <p class="p-60">
+        Mnemonic, tiene un modelo de economía solidaria, por cada compra realizada, se aporta un 50% del total de las ganancias para facilitar que niños, adolecentes y jóvenes de zonas vulnerables de Perú puedan tener acceso a un Hackspace en su comunidad.
+        </p>
+      </div>
+      <div class="column-5-block">
+        <br>
+        <img src="images/hackspace.PNG" style="width:265px; margin-left:5%">
+      </div>
+    </div>
+  </section>
+  <section>
+      <div class="community-banner inverse padding">        
+        <div class="main-container text-center">
+        <div class="column-4-block"><img src="images/wasi_logo.png"> </div>
+        <div class="column-4-block"><img src="images/hank_logo.png"> </div>
+        <div class="column-4-block"><img src="images/timov_logo.png"> </div>
+        </div>
+      </div>
+  </section>
+  <footer  class="text-center">
+    © Mnemonic250 2016. Todos los Derechos Reservados. Politica de Privacidad | Términos de Uso
+  </footer>
+</body>
+<script type="text/javascript">
+  $(document).ready(function() {
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+  });
+</script>
+</html>

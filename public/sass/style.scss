@@ -1,0 +1,57 @@
+// GENERAL
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+// COMPONENTS
+@import "components/general";
+@import "components/cards";
+@import "components/modal";
+@import "components/footer";
+@import "components/contact-form-7";
+@import "components/search_tools";
+
+.blog-posts {
+  margin-top: 1.5em;
+  @include outer-container;
+  .blog-post {
+    @include span-columns(12);
+    .card-image {
+      height: 400px !important;
+      max-height: 400px !important;
+    }
+    .card-image-full {
+      margin-right: auto;
+      margin-left: auto;
+      width: 70% !important;
+      max-width: 70% !important;
+    }
+  }
+  .blog-post-big {
+    @include span-columns(12);
+    @include media($medium-screen) {
+      @include span-columns(8);
+      .card-image {
+        height: 234.5px !important;
+        max-height: 234.5px !important;
+      }
+    }
+    min-height: 0px;
+    margin-right: 0 !important;
+  }
+  .blog-post-small {
+    @include span-columns(12);
+    @include media($medium-screen) {
+      @include span-columns(4);
+      .card-copy {
+        padding: 0 !important;
+        p {
+          display: none;
+        }
+      }
+      .card-header {
+        padding: 0 !important;
+      }
+    }
+    margin-right: 0 !important;
+  }
+}

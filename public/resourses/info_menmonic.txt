@@ -1,0 +1,6 @@
+
+background : (#EDEDED) / Ese color hace contraste para que la botellas no se pierda en un tono blanco
+
+Header texts /  rojo roll over ( #B30B0D) - gris (#4D4D4D)
+
+texto ¡Para todos los que no pueden parar de crear! (#333333)
